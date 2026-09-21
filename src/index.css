@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --color-zinc-875: #1c1c1f;
+  --color-zinc-775: #2d2d31;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-align {
+    @apply flex items-center;
+  }
+
+  .flex-justify {
+    @apply flex justify-center;
+  }
+
+  .flex-column {
+    @apply flex flex-col;
+  }
+
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
+  .flex-col-align {
+    @apply flex flex-col items-center;
+  }
+
+  .flex-col-justify {
+    @apply flex flex-col justify-center;
+  }
+
+  .flex-col-between {
+    @apply flex flex-col justify-between;
+  }
+
+  .fill-screen {
+    @apply h-dvh w-full;
+  }
+
+  .fill-parent {
+    @apply h-full w-full;
+  }
+
+  .cp {
+    @apply cursor-pointer;
+  }
+
+  .fixed-top {
+    @apply fixed top-0 inset-x-0 z-99;
+  }
+
+  .fixed-overlay {
+    @apply fixed inset-0 z-50;
+  }
+
+  .below-parent {
+    @apply absolute top-full left-0 z-50;
+  }
+  .container {
+    @apply container mx-auto px-2 sm:px-4 max-w-6xl;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
