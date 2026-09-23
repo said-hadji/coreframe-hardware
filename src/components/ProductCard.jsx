@@ -3,6 +3,7 @@ import StarRating from "./StarRating";
 import { getDiscountedPrice } from "../utils/getDiscountedPrice";
 import clsx from "clsx";
 import Button from "./Button";
+import { formatCurrency } from "../utils/formatCurrency";
 
 export default function ProductCard({
   id,
@@ -15,7 +16,7 @@ export default function ProductCard({
   discount,
 }) {
   const isDiscount = discount > 0;
-  console.log(isDiscount);
+  const priceAfterDiscount = getDiscountedPrice({ price, discount });
 
   return (
     <a
@@ -49,11 +50,11 @@ export default function ProductCard({
 
           <div className={clsx({ "flex-align gap-1.5": isDiscount })}>
             <span className="font-display font-extrabold text-white text-xl leading-none">
-              {getDiscountedPrice({ price, discount })}$
+              {formatCurrency(priceAfterDiscount)}
             </span>
             {isDiscount && (
               <span className="text-[15px] text-white/60 font-sans line-through leading-none">
-                {price}$
+                {formatCurrency(price)}
               </span>
             )}
           </div>

@@ -21,7 +21,7 @@ export function AddToCart({ className }) {
   return (
     <button
       className={clsx(
-        "bg-blue-300 hover:bg-blue-100 text-center text-black/80 cp",
+        "bg-purple hover:bg-white text-center text-black/80 cp",
         buttonStyle,
         className,
       )}

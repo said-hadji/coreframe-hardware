@@ -16,17 +16,17 @@ export default function Home() {
       <div className="absolute top-0 left-0 w-full h-screen bg-linear-to-r from-zinc-950 via-zinc-950/95 to-zinc-950/30"></div>
 
       <div className="container relative fill-parent overflow-hidden">
-        <div className="absolute inset-0 flex-col-justify px-3.5">
+        <div className="absolute inset-0 flex-col-justify px-2 sm:px-3.5">
           <div>
             <h2 className="text-5xl sm:text-6xl xl:text-8xl font-extrabold font-display text-white">
               Build it right,
             </h2>
-            <h1 className="text-5xl sm:text-6xl xl:text-8xl font-extrabold font-display text-blue-200">
+            <h1 className="text-5xl sm:text-6xl xl:text-8xl font-extrabold font-display text-purple">
               the first time
             </h1>
           </div>
 
-          <p className="text-zinc-200/70 text-sm sm:text-base xl:text-lg font-sans pl-0.5 sm:pl-1.5 mt-6">
+          <p className="text-zinc-200/70 text-sm sm:text-base xl:text-lg font-sans pl-0.5 sm:pl-1.5 mt-3">
             Every component, prebuilt PC, and peripheral you need, in stock and
             ready to ship today.
           </p>

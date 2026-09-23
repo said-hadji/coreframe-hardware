@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className={clsx("fixed-top bg-zinc-50")}>
       <div className="container flex-between py-6">
         <h1
-          className={clsx("text-lg text-blue-950 font-extrabold font-display")}
+          className={clsx("text-lg text-black font-extrabold font-display")}
         >
           Coreframe
         </h1>

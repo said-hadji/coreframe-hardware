@@ -6,6 +6,7 @@
   --font-display: "Space Grotesk", sans-serif;
   --color-zinc-875: #1c1c1f;
   --color-zinc-775: #2d2d31;
+  --color-purple: #B8ACF6;
 }
 
 @layer utilities {
@@ -23,6 +24,10 @@
 
   .flex-justify {
     @apply flex justify-center;
+  }
+
+  .flex-row-between {
+    @apply flex-row items-center justify-between
   }
 
   .flex-column {

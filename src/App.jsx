@@ -1,7 +1,8 @@
 import CoreframeProvider from "./context/CoreframeProvider";
 import Navbar from "./components/navbar/Navbar";
-import Home from "./features/home/Home"
-import SuggestionsSection from "./features/suggestionsSection/SuggestionsSection"
+import Home from "./features/home/Home";
+import SuggestionsSection from "./features/suggestionsSection/SuggestionsSection";
+import AutumnOffer from "./features/offers/AutumnOffer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <SuggestionsSection />
+      <AutumnOffer />
     </CoreframeProvider>
   );
 }
