@@ -1,5 +1,6 @@
 import { useLayoutEffect, useState } from "react";
 import { CoreframeCtx } from "./CoreframeCtx";
+import { data } from "../data";
 
 export default function CoreframeProvider({ children }) {
   const [isCart, setIsCart] = useState(false);
@@ -11,8 +12,10 @@ export default function CoreframeProvider({ children }) {
     };
   }, [isCart]);
 
+  const offerData = data?.offer ?? null;
+
   return (
-    <CoreframeCtx.Provider value={{ isCart, setIsCart }}>
+    <CoreframeCtx.Provider value={{ isCart, setIsCart, offerData }}>
       {children}
     </CoreframeCtx.Provider>
   );

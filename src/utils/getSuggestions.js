@@ -1,7 +1,7 @@
-import { products } from "../data/index";
+import { data } from "../data/index";
 
 export function getSuggestions(count = 4) {
-  const filtered = products.filter((p) => p.featured && p.rating >= 4);
+  const filtered = data.products.filter((p) => p.featured && p.rating >= 4);
 
   for (let i = filtered.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

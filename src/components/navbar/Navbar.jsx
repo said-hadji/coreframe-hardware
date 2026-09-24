@@ -11,7 +11,7 @@ export default function Navbar() {
         >
           Coreframe
         </h1>
-        <div className={`flex-align gap-12`}>
+        <div className="flex-align gap-12">
           {navbarItems.map((item) => {
             const { id, label } = item;
 

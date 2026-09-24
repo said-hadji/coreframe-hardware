@@ -1,16 +1,17 @@
+import { Routes, Route } from "react-router";
 import CoreframeProvider from "./context/CoreframeProvider";
-import Navbar from "./components/navbar/Navbar";
-import Home from "./features/home/Home";
-import SuggestionsSection from "./features/suggestionsSection/SuggestionsSection";
-import AutumnOffer from "./features/offers/AutumnOffer";
+import HomePage from "./pages/HomePage";
+import AutumnPage from "./pages/AutumnPage";
+import NewProductsPage from "./pages/NewProductsPage";
 
 function App() {
   return (
     <CoreframeProvider>
-      <Navbar />
-      <Home />
-      <SuggestionsSection />
-      <AutumnOffer />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/autumn" element={<AutumnPage />} />
+        <Route path="/new" element={<NewProductsPage />} />
+      </Routes>
     </CoreframeProvider>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import clsx from "clsx";
 import { useCoreframe } from "../../hooks/useCoreframe";
 import Button from "../../components/Button";
@@ -32,11 +33,7 @@ export default function Home() {
           </p>
 
           <div className="mt-8 lg:mt-9 xl:mt-10 sm:pl-1.5">
-            <Button
-              type={"discover_new"}
-              onClick={() => console.log("clicked")}
-              href={"#google"}
-            >
+            <Button as={Link} to="/new" variant="discover_new" href={"#google"}>
               Discover New
             </Button>
           </div>

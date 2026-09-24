@@ -5,20 +5,20 @@ export default function NavActions({ cartCount }) {
   const hasItem = cartCount > 0;
 
   return (
-    <div className={`flex-align gap-6`}>
+    <div className="flex-align gap-6">
       <Button as="button">
         <Search
           size={20}
           strokeWidth={1.2}
-          className={`text-gray-500 hover:text-gray-900`}
+          className="text-gray-500 hover:text-gray-900"
         />
       </Button>
 
-      <Button as="button" type={"cart_button"}>
+      <Button as="button" type="cart_button">
         <ShoppingBasket
           size={20}
           strokeWidth={1.2}
-          className={`text-zinc-500 hover:text-zinc-900`}
+          className="text-zinc-500 hover:text-zinc-900"
         />
 
         {hasItem && (
@@ -32,7 +32,7 @@ export default function NavActions({ cartCount }) {
         <User
           size={20}
           strokeWidth={1.2}
-          className={`text-zinc-500 hover:text-zinc-900`}
+          className="text-zinc-500 hover:text-zinc-900"
         />
       </Button>
     </div>

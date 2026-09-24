@@ -19,12 +19,11 @@ export default function ProductCard({
   const priceAfterDiscount = getDiscountedPrice({ price, discount });
 
   return (
-    <a
+    <div
       key={id}
-      href={`#product-${id}`}
-      className={`group bg-zinc-875 border border-zinc-775 rounded-4xl flex-column overflow-hidden snap-center`}
+      className="group bg-zinc-875 border border-zinc-775 rounded-4xl flex-column overflow-hidden snap-center"
     >
-      <div className={`w-full aspect-square bg-white overflow-hidden`}>
+      <div className="w-full aspect-square bg-white overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -39,17 +38,17 @@ export default function ProductCard({
             {title}
           </h2>
 
-          <p className={`text-sm text-white/70 font-sans mb-1 line-clamp-1`}>
+          <p className="text-sm text-white/70 font-sans mb-1 line-clamp-1">
             {description}
           </p>
 
-          <div className="flex-align gap-1 mb-3.5">
-            <span className={`text-sm text-white/80 mt-0.5`}>{rating}</span>
+          <div className="flex-align gap-1 mb-6.5">
+            <span className="text-sm text-white/80 mt-0.5">{rating}</span>
             <StarRating rating={rating} size={15} />
           </div>
 
           <div className={clsx({ "flex-align gap-1.5": isDiscount })}>
-            <span className="font-display font-extrabold text-white text-xl leading-none">
+            <span className="font-display font-extrabold text-white text-2xl leading-none">
               {formatCurrency(priceAfterDiscount)}
             </span>
             {isDiscount && (
@@ -61,16 +60,16 @@ export default function ProductCard({
         </div>
 
         {availability ? (
-          <div className={`grid grid-cols-1 sm:grid-cols-2 gap-2`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             <BuyNow />
             <AddToCart />
           </div>
         ) : (
-          <Button type={"notify_user"} href="#notify_user">
+          <Button variant="notify_user" href="#notify_user">
             Notify me when available
           </Button>
         )}
       </div>
-    </a>
+    </div>
   );
 }
