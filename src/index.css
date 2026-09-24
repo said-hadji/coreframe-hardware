@@ -78,6 +78,10 @@
   }
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes roll-in {
   from {
     transform: translateY(-100%);

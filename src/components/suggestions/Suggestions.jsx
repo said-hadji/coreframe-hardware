@@ -23,7 +23,7 @@ export default function Suggestions({ className, products }) {
           </Button>
         </div>
 
-        <div className="w-full overflow-x-auto snap-x snap-mandatory">
+        <div className="w-full overflow-x-auto snap-x snap-mandatory hide-scrollbar">
           <div className="grid grid-flow-col auto-cols-[80%] sm:auto-cols-70 lg:grid-flow-row lg:grid-cols-4 lg:auto-cols-auto gap-2 sm:gap-4">
             {products.map((p) => {
               const {
