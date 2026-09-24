@@ -271,7 +271,8 @@ export const data = {
     title: "Upgrade your workspace or gaming rig with up to 50% OFF",
     description:
       "Premium audio, ultra-fast peripherals, and desktop essentials—now up to 50% off for a limited time",
-    startTime: "2026-09-24T00:00:00+01:00",
-    endTime: "2026-09-25T23:59:59+01:00",
+    startTime: "2026-09-24T22:45:10+01:00",
+    endTime: "2026-09-24T22:59:59+01:00",
+    navigateTo: "autumn",
   },
 };

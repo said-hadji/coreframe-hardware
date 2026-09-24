@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import clsx from "clsx";
 import Button from "../Button";
 import { ArrowRight } from "lucide-react";
@@ -11,7 +12,12 @@ export default function Suggestions({ className, products }) {
           <h1 className="text-xl lg:text-2xl text-white/80 font-bold font-display">
             Suggestions
           </h1>
-          <Button type="show_more" href="#show_more">
+          <Button
+            as={Link}
+            to="/products"
+            variant="show_more"
+            href="#show_more"
+          >
             <span>Show more</span>
             <ArrowRight size={20} strokeWidth={1.2} />
           </Button>
