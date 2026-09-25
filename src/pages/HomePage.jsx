@@ -4,9 +4,11 @@ import SuggestionsSection from "../features/suggestionsSection/SuggestionsSectio
 import Offer from "../features/offer/Offer";
 import ValueProposition from "../features/valueProposition/ValueProposition";
 import { useCoreframe } from "../hooks/useCoreframe";
+import useSmoothScroll from "../hooks/useSmoothScroll";
 
 export default function HomePage() {
   const { offerData } = useCoreframe();
+  useSmoothScroll();
 
   return (
     <>

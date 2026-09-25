@@ -3,7 +3,7 @@ import clsx from "clsx";
 import useCountdown from "../../hooks/useCountdown";
 
 const pad = (n) => String(n).padStart(2, "0");
-const SIZE = "text-3xl sm:text-4xl";
+const SIZE = "text-2xl sm:text-4xl";
 
 function Digit({ char }) {
   const [current, setCurrent] = useState(char);
@@ -42,7 +42,7 @@ function TimeUnit({ value, label, urgent }) {
     <div aria-hidden="true" className="flex flex-col items-center gap-1.5">
       <div
         className={clsx(
-          "flex rounded-xl px-3 py-1.5 font-display font-semibold tabular-nums ring-1 transition-colors duration-500",
+          "flex rounded-xl px-1.5 sm:px-3 py-1.5 font-display font-semibold tabular-nums ring-1 transition-colors duration-500",
           SIZE,
           urgent
             ? "bg-rose-500/10 text-rose-200 ring-rose-400/40"

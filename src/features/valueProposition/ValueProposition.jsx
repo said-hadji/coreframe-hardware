@@ -13,7 +13,7 @@ export default function ValueProposition() {
             const { id, title, description } = f;
 
             return (
-              <div key={id} className="bg-zinc-875/50 border border-zinc-775 p-8 rounded-4xl space-y-4">
+              <div key={id} className="bg-zinc-875/50 border border-zinc-800 p-8 rounded-4xl space-y-4">
                 <h1 className="text-lg lg:text-xl text-white font-medium font-display">
                   {title}
                 </h1>
