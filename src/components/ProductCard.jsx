@@ -23,7 +23,7 @@ export default function ProductCard({
       key={id}
       className="group bg-zinc-875 border border-zinc-775 rounded-4xl flex-column overflow-hidden snap-center"
     >
-      <div className="w-full aspect-square bg-white overflow-hidden">
+      <div className="w-full aspect-square bg-zinc-200 overflow-hidden">
         <img
           src={image}
           alt={title}

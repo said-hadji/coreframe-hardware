@@ -1,8 +1,7 @@
-import { Link } from "react-router";
 import clsx from "clsx";
-import Button from "../Button";
 import { ArrowRight } from "lucide-react";
 import ProductCard from "../ProductCard";
+import BrowsProductsBtn from "../BrowsProductsBtn";
 
 export default function Suggestions({ className, products }) {
   return (
@@ -12,15 +11,10 @@ export default function Suggestions({ className, products }) {
           <h1 className="text-xl lg:text-2xl text-white/80 font-bold font-display">
             Suggestions
           </h1>
-          <Button
-            as={Link}
-            to="/products"
-            variant="show_more"
-            href="#show_more"
-          >
+          <BrowsProductsBtn className={"text-sm text-white/70 hover:text-white flex-align gap-1"}>
             <span>Show more</span>
             <ArrowRight size={20} strokeWidth={1.2} />
-          </Button>
+          </BrowsProductsBtn>
         </div>
 
         <div className="w-full overflow-x-auto snap-x snap-mandatory hide-scrollbar">

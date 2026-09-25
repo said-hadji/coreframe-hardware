@@ -3,6 +3,11 @@ import clsx from "clsx";
 import { useCoreframe } from "../../hooks/useCoreframe";
 import Button from "../../components/Button";
 
+const states = [
+  { id: 1, title: "Customers", number: 1000 },
+  { id: 2, title: "Products", number: 500 },
+];
+
 export default function Home() {
   const { isCart } = useCoreframe();
 
@@ -27,12 +32,24 @@ export default function Home() {
             </h1>
           </div>
 
-          <p className="text-zinc-200/70 text-sm sm:text-base xl:text-lg font-sans pl-0.5 sm:pl-1.5 mt-3">
-            Every component, prebuilt PC, and peripheral you need, in stock and
-            ready to ship today.
-          </p>
+          <div className="flex-align gap-6 mt-8 ml-2">
+            {states.map((s) => {
+              return (
+                <div className="flex-align gap-4">
+                  <div className="space-x-2">
+                    <span className="text-4xl text-white font-display font-medium">
+                      +{s.number}
+                    </span>
+                    <span className="text-xl text-white/70 font-display font-medium">
+                      {s.title}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
 
-          <div className="mt-8 lg:mt-9 xl:mt-10 sm:pl-1.5">
+          <div className="mt-8 lg:mt-9 xl:mt-11 sm:pl-1.5">
             <Button as={Link} to="/new" variant="discover_new" href={"#google"}>
               Discover New
             </Button>
