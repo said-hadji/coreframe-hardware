@@ -275,4 +275,34 @@ export const data = {
     endTime: "2026-09-27T23:59:59+01:00",
     navigateTo: "autumn",
   },
+  testimonials: [
+    {
+      id: crypto.randomUUID(),
+      name: "Mohamed",
+      description:
+        "Exceptional quality and service. Build quality exceeded my expectations!",
+      rating: 5,
+    },
+    {
+      id: crypto.randomUUID(),
+      name: "Youssef",
+      description:
+        "Great product lineup and competitive pricing. Support response could be slightly faster, but overall a solid experience.",
+      rating: 4,
+    },
+    {
+      id: crypto.randomUUID(),
+      name: "Ahmed",
+      description:
+        "My order arrived with damaged packaging, and getting a response took longer than expected. Eventually resolved, but needs improvement.",
+      rating: 3,
+    },
+    {
+      id: crypto.randomUUID(),
+      name: "Jim",
+      description:
+        "Seamless purchasing experience from start to finish. Highly recommended!",
+      rating: 5,
+    },
+  ],
 };
