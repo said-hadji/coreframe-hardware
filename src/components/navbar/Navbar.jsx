@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { navbarItems } from "../../data/navbarItems";
+import { navbarItems } from "../../data/index";
 import NavActions from "./NavActions";
 
 export default function Navbar() {

@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from "react";
 import { CoreframeCtx } from "./CoreframeCtx";
-import { data } from "../data";
+import { data } from "../data/data";
 
 export default function CoreframeProvider({ children }) {
   const [isCart, setIsCart] = useState(false);

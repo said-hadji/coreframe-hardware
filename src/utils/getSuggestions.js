@@ -1,4 +1,4 @@
-import { data } from "../data/index";
+import { data } from "../data/data";
 
 export function getSuggestions(count = 4) {
   const filtered = data.products.filter((p) => p.featured && p.rating >= 4);

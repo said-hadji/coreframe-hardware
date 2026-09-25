@@ -9,8 +9,8 @@ export default function Offer({ offerData }) {
   const { done } = useCountdown(startTime, endTime);
 
   return (
-    <div className="w-full bg-zinc-950">
-      <div className="container py-20 flex-column gap-10">
+    <div className="w-full bg-zinc-950 py-20">
+      <div className="container flex-column gap-10">
         <h1 className="text-white/80 text-xl lg:text-2xl font-bold font-display">
           {name} offer
         </h1>
@@ -36,7 +36,7 @@ export default function Offer({ offerData }) {
                   as={Link}
                   to={`/${navigateTo}`}
                   variant="shop_deals"
-                  style={{ boxShadow: "0px 0px 23px 10px #B8ACF620" }}
+                  style={{ boxShadow: "0px 0px 23px 3px #B8ACF620" }}
                 >
                   Shop {name} Deals
                 </Button>

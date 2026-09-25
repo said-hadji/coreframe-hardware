@@ -6,6 +6,7 @@ export function BuyNow({ className }) {
   return (
     <a
       href="#buy_now"
+      style={{boxShadow: "0px 0px 20px 2px rgba(0,0,0,0.2)"}}
       className={clsx(
         "bg-zinc-775 hover:bg-zinc-700 text-center text-white/80",
         buttonStyle,
